@@ -1,3 +1,3 @@
-function showAlert() {
-    alert("Halo! Ini adalah website GitHub Pages.");
-}
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("Portfolio Website Loaded!");
+});
