@@ -1,43 +1,115 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Nama Kamu</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Akhfa Maulana</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Nama Kamu</h1>
-        <p>Web Developer | Designer | Freelancer</p>
-    </header>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="about">
-        <h2>Tentang Saya</h2>
-        <p>Saya adalah seorang pengembang web yang bersemangat dalam menciptakan tampilan yang menarik dan fungsional.</p>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxT5hSo9RLkduBW-GungG00rnEPRY9-3wzxgW5bvaa3vfJUovo34mwINOoszRCEFr5Fcs&usqp=CAU" alt="Your Profile Picture">
+      <p>
+        I am a student in Smk Bina Prestasi School and i wants to become a Web Designer. I currently master the programming languages HTML, CSS, and JS.
+      </p>
+    </div>
+  </section>
 
-    <section id="projects">
-        <h2>Proyek</h2>
-        <div class="project-card">
-            <h3>Proyek 1</h3>
-            <p>Deskripsi proyek pertama.</p>
-        </div>
-        <div class="project-card">
-            <h3>Proyek 2</h3>
-            <p>Deskripsi proyek kedua.</p>
-        </div>
-    </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSio3XXaEa_yz360fB1fHeeDQDYjZ6foSEW_Q&s" alt="Project 1">
+        <h3>Project Title 1</h3>
+        <p>
+          Provide a short description of the project, its purpose, and any technologies you used. 
+          Include links to the project website or repository if available.
+        </p>
+      </div>
 
-    <section id="contact">
-        <h2>Hubungi Saya</h2>
-        <a href="mailto:emailkamu@gmail.com" class="contact-btn">Email Saya</a>
-    </section>
+      <div class="project">
+        <img src="project-2-image.jpg" alt="Project 2">
+        <h3>Project Title 2</h3>
+        <p>
+          Provide a short description of the project, its purpose, and any technologies you used. 
+          Include links to the project website or repository if available.
+        </p>
+      </div>
 
-    <footer>
-        <p>&copy; 2025 Nama Kamu. Dibuat dengan ❤️.</p>
-    </footer>
 
-    <script src="script.js"></script>
+      <div class="project">
+        <img src="project-2-image.jpg" alt="Project 2">
+        <h3>Project Title 2</h3>
+        <p>
+          Provide a short description of the project, its purpose, and any technologies you used. 
+          Include links to the project website or repository if available.
+        </p>
+      </div>
+
+      <div class="project">
+        <img src="project-2-image.jpg" alt="Project 2">
+        <h3>Project Title 2</h3>
+        <p>
+          Provide a short description of the project, its purpose, and any technologies you used. 
+          Include links to the project website or repository if available.
+        </p>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      You can reach me at: 
+      <br>
+      <a href="mailto:akhfam70@gmail.com">akhfam70@gmail.com</a>
+      <br>
+      <a href="https://www.linkedin.com/in/your-linkedin-profile">LinkedIn</a>
+      <br>
+
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Akhfa Maulana</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navMenu = document.querySelector("nav ul");
+
+      menuToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("active");
+      });
+    });
+  </script>
+  
 </body>
 </html>
